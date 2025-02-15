@@ -12,10 +12,11 @@
     # pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations."unknown" = nixpkgs.lib.nixosSystem {
+      inherit system;
       modules = [
         ./hosts/unknown
+        ./users/glitch
       ];
-      inherit system;
     }
   };
 }
