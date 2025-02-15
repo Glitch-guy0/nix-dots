@@ -11,6 +11,11 @@
     # this option is to use stable / old packages
     # pkgs = nixpkgs.legacyPackages.${system};
   in {
-    
+    nixosConfigurations."unknown" = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./hosts/unknown
+      ];
+      inherit system;
+    }
   };
 }
