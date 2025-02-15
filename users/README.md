@@ -6,6 +6,10 @@ Users
         - default.nix => for nixos / system configuration of user
         - config.nix => imported by home.nix and default.nix contains info like username & options
         - home.nix => user home-manager configuraion
+        - applications
+            - application name
+                - default.nix
+                - configuration.nix
     - user2
         - flake.nix => for users home-manager
         - default.nix => for nixos / system configuration of user
