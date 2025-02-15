@@ -15,6 +15,6 @@ in
   };
 
   ## Autologin Service
-  services.xserver.displayManager.autoLogin.enable = this.autologin;
-  services.xserver.displayManager.autoLogin.user = this.username;
+  services.displayManager.autoLogin.enable = this.autologin;
+  services.displayManager.autoLogin.user = this.username;
 }

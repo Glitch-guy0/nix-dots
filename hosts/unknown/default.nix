@@ -17,14 +17,14 @@ in
   ];
 
   ## Hostname
-  networking.hostname = this.hostname;
+  networking.hostName = this.hostname;
 
   ## Networking
-  networking.wireless.enable = this.wifi;
+  networking.wireless.enable = this.legacywifi;
   networking.networkmanager.enable = this.wifi;
 
   ## Printer Service (CUPS)
   services.printing.enable = this.printer;
   ## Touchpad
-  services.xserver.libinput.enable = this.touchpad;
+  services.libinput.enable = this.touchpad;
 }

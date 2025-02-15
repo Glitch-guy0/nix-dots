@@ -17,6 +17,6 @@
         ./hosts/unknown
         ./users/glitch
       ];
-    }
+    };
   };
 }
