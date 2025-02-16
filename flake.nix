@@ -1,11 +1,11 @@
 {
-  description = "A very basic flake";
+  description = "My nixos System Configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }: 
+  outputs = { self, nixpkgs}@inputs: 
   let 
     system = "x86_64-linux";
     # this option is to use stable / old packages
