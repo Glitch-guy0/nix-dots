@@ -1,5 +1,6 @@
 {
   autologin = true;
+  bluetooth = false;
   hostname = "unknown";
   printer = true;
   touchpad = true;

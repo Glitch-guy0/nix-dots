@@ -16,6 +16,8 @@ in
     ./hardware-configuration.nix
   ];
 
+  ## Bluetooth
+  hardware.bluetooth.enable = this.bluetooth;
   ## Hostname
   networking.hostName = this.hostname;
 
