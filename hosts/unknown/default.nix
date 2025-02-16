@@ -6,11 +6,13 @@ in
 {
   imports = [
     # system config
+    ../../system/audio
+    ../../system/desktopEnvironments/hyprland
+    ../../system/desktopEnvironments/kde
+    ../../system/fonts
     ../../system/nix
     ../../system/packages
     ../../system/timezone/india
-    ../../system/desktopEnvironments/kde
-    ../../system/audio
 
     # core conifg
     ./hardware-configuration.nix
