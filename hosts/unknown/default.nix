@@ -27,4 +27,7 @@ in
   services.printing.enable = this.printer;
   ## Touchpad
   services.libinput.enable = this.touchpad;
+
+  ## virtualization
+  virtualisation.vmware.guest.enable = this.vmware.guest;
 }

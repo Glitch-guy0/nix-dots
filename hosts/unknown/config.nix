@@ -5,4 +5,5 @@
   touchpad = true;
   wifi = true;
   legacywifi = false;
+  vmware.guest = true;
 }
