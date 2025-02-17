@@ -1,7 +1,11 @@
 this file is extention of *home-manager*
-and should contain configuraion of application / packages with it's dependencies and service configs, so that it should work out of the box
+and should contain configuraion of application / packages with it's dependencies and service configs, so that it should work out of the box.
 
-but the application configuration will be on the userside.
+all the global config / will be stored here
+
+### what to do
+- these stores the default most used pkgs with configs stay here
+- if you need to use slightly different but not that you need. then copy this and paste it in your user dir `/users/<user>/package.config.nix`
 
 ## file structure
 homeUtils

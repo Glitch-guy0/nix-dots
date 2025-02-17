@@ -5,9 +5,6 @@ in
 {
   home.packages = with pkgs;[
     btop
-
-    xdg-utils
-    xdg-user-dirs
   ];
 
   # home.file = {
