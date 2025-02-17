@@ -1,6 +1,6 @@
 rec{
   admin = false; # root User?
-  autologin = true;
+  autologin = false;
   username = "glitch";
   homedir = "/home/${username}";
   groups = ["networkmanager" "wheel" ];

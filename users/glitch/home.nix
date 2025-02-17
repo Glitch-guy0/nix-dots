@@ -1,16 +1,18 @@
 { config, pkgs, ... }:
 let 
-  this = ./config.nix;
+  this = import ./config.nix;
 in 
 {
-
   home.packages = with pkgs;[
     btop
+
+    xdg-utils
+    xdg-user-dirs
   ];
 
-  home.file = {
-
-  };
+  # home.file = {
+    
+  # };
 
   home.sessionVariables = {
     EDITOR = "vim";

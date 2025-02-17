@@ -1,5 +1,7 @@
 # User folder structure
 
+> <span style='color: red;'>warning:</span> having *config* files in user directory is fine; as it doesn't take much space as *packages*
+
 Users
     - flake.nix => for users home-manager call like `home --apply-flake ./users#username'(not-command)
     - shared
