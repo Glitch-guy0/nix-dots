@@ -20,6 +20,11 @@ in
 
   ## Bluetooth
   hardware.bluetooth.enable = this.bluetooth;
+
+  ## efi configuration
+  boot.loader.systemd-boot.enable = this.efi;
+  boot.loader.efi.canTouchEfiVariables = this.efi;
+
   ## Hostname
   networking.hostName = this.hostname;
 

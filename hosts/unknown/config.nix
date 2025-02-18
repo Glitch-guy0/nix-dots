@@ -1,6 +1,7 @@
 {
   autologin = true;
   bluetooth = false;
+  efi = true;
   hostname = "unknown";
   printer = true;
   touchpad = true;
