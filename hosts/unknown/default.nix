@@ -17,6 +17,7 @@ in
 
     # core conifg
     ./hardware-configuration.nix
+    ./power.nix
   ];
 
   ## Bluetooth

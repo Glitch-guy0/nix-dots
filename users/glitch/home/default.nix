@@ -4,11 +4,10 @@ let
 in 
 {
 
-  # package imports
   imports = [
-    ./packages/vscode
-    ./packages/git
+    ./packages.nix
   ];
+  
   home.packages = with pkgs;[
     btop
   ];
@@ -17,8 +16,6 @@ in
     EDITOR = "vim";
     LANG = "en_US.UTF-8";
   };
-
-
 
   # Do not touch
   home.username = this.username;
