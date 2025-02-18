@@ -11,8 +11,5 @@
     # for electron apps (like vscode)
     NIXOS_OZONE_WL = "1";
   };
-
-  hardware = {
-    graphics.enable = true;
-  };
+  
 }

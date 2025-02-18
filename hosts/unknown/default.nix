@@ -9,6 +9,7 @@ in
     ../../system/audio
     ../../system/desktopEnvironments/hyprland
     ../../system/desktopEnvironments/kde
+    ../../system/intel-graphics
     ../../system/fonts
     ../../system/nix
     ../../system/packages
