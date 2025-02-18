@@ -17,8 +17,7 @@
       homeConfigurations."glitch" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ 
-          ./glitch/home.nix
-          ../homeUtils/desktopEnvironments/hyprland
+          ./glitch/home
         ];
         extraSpecialArgs = {};
       };

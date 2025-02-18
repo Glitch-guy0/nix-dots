@@ -1,15 +1,17 @@
 { config, pkgs, ... }:
 let 
-  this = import ./config.nix;
+  this = import ../config.nix;
 in 
 {
+
+  # package imports
+  imports = [
+    ./packages/vscode
+    ./packages/git
+  ];
   home.packages = with pkgs;[
     btop
   ];
-
-  # home.file = {
-    
-  # };
 
   home.sessionVariables = {
     EDITOR = "vim";
@@ -23,4 +25,5 @@ in
   home.homeDirectory = this.homedir;
   home.stateVersion = "24.05"; 
   programs.home-manager.enable = true;
+  nixpkgs.config.allowUnfree = true;
 }
