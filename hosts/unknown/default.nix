@@ -7,7 +7,7 @@ in
   imports = [
     # system config
     ../../system/audio
-    ../../system/desktopEnvironments/hyprland
+    # ../../system/desktopEnvironments/hyprland
     ../../system/desktopEnvironments/kde
     ../../system/intel-graphics
     ../../system/fonts
