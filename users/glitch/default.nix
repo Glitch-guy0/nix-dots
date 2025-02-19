@@ -5,6 +5,7 @@ in
 {
   ## Base user Configuration
   users.users.${this.username} = {
+    initialPassword = "user";
     isNormalUser = !this.admin;
     description = this.username;
     extraGroups = this.groups;

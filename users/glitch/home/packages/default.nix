@@ -6,7 +6,6 @@
   ];
 
   imports = [
-    ./dev
     ./git.nix
     ./vscode
     ./zed-editor.nix

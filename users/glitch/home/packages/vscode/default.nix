@@ -2,8 +2,12 @@
 {
   programs.vscode = {
     enable = true;
-    extentions = with pkgs;[
+    extensions = with pkgs;[
       vscode-extensions.mhutchie.git-graph
     ];
-  }
+  };
+
+  imports = [
+    ./java.nix
+  ];
 }
