@@ -4,4 +4,8 @@
     ./git
     ./vscode
   ];
+
+  home.packages = with pkgs;[
+    brave
+  ];
 }

@@ -8,10 +8,7 @@ in
     isNormalUser = !this.admin;
     description = this.username;
     extraGroups = this.groups;
-    packages = with pkgs; [
-      vscode ## remove this package later
-      brave  ## remove this later
-    ];
+    packages = with pkgs; [];
   };
 
   ## Autologin Service

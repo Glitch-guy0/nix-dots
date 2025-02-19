@@ -5,7 +5,9 @@ in
 {
 
   imports = [
-    ./packages.nix
+    ./applications
+    ./dev
+    # ./hyprland
   ];
   
   home.packages = with pkgs;[
