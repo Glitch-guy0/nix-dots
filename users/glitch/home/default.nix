@@ -3,13 +3,6 @@ let
   this = import ../config.nix;
 in 
 {
-
-  imports = [
-    ./applications
-    ./dev
-    # ./hyprland
-  ];
-  
   home.packages = with pkgs;[
     btop
   ];
