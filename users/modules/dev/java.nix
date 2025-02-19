@@ -11,7 +11,7 @@
 
   programs.vscode = {
     enable = true;
-    extentions = with pkgs;[
+    extensions = with pkgs;[
       vscode-extensions.vscjava.vscode-java-pack
     ];
   };

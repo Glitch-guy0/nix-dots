@@ -1,5 +1,11 @@
 {config, pkgs, ...}:
 {
+
+  home.packages = with pkgs;[
+    brave
+  ];
+
+  
   # git
   programs.git = {
     enable = true;
