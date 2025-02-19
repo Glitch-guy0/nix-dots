@@ -18,8 +18,6 @@
         inherit pkgs;
         modules = [ 
           ./glitch/home
-          ./modules/applications.nix
-          ./modules/dev/java.nix
         ];
         extraSpecialArgs = {};
       };

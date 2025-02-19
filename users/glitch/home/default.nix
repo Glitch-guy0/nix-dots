@@ -3,10 +3,10 @@ let
   this = import ../config.nix;
 in 
 {
-  home.packages = with pkgs;[
-    btop
+  imports = [
+    ./packages
   ];
-
+  
   home.sessionVariables = {
     EDITOR = "vim";
     LANG = "en_US.UTF-8";

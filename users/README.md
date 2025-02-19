@@ -4,17 +4,18 @@
 
 Users
     - flake.nix => for users home-manager call like `home --apply-flake ./users#username'(not-command)
-    - shared
-        - application name
-            - config files here(.nix)
     - user1
         - default.nix => for nixos / system configuration of user
         - config.nix => imported by home.nix and default.nix contains info like username & options
-        - home.nix => user home-manager configuraion
-          - applications
-              - application name
-                  - default.nix
-                  - configuration.nix
+        - home => user home-manager configuraion
+          - default.nix => which is pointed in user's flake also imports packages
+          - packages
+              - types (if necessary)
+                - shell / terminal / desktopEnvironment
+              - package.nix (same if separation is not required) (start here)
+              - package (same if separation required)
+                - default.nix
+                - extra required fiels
     - user2
         - default.nix => for nixos / system configuration of user
         - config.nix => imported by home.nix and default.nix contains info like username & options
